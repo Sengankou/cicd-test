@@ -18,6 +18,14 @@ on:
         default: Hello
         required: true
         description: A cheerful word
+      log-level:
+        type: choice
+        options:
+          - debug
+          - info
+          - warning
+          - error
+        default: info
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
